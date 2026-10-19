@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Student portfolio of Junbert Advincula, a Bachelor of Science in Information Technology student.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Junbert Advincula | IT Student Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <script>
+    (function(){var t='light';try{t=localStorage.getItem('theme')||'light'}catch(e){}
+    document.documentElement.setAttribute('data-theme',t==='dark'?'dark':'light');})();
+  </script>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <canvas id="net-bg" aria-hidden="true"></canvas>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home"><span class="brand-mark">&gt;_</span><span class="brand-text">junbert<span class="brand-host">@portfolio</span></span></a>
+      <div class="nav-actions">
+        <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+          <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><g class="sun"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></g><path class="moon" d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <span class="theme-prompt">$ theme</span><span class="theme-value">--light</span>
+        </button>
+        <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+      </div>
+      <div class="nav-links">
+        <a href="#home" class="nav-link active">~/home</a>
+        <a href="#about" class="nav-link">~/about</a>
+        <a href="#education" class="nav-link">~/education</a>
+        <a href="#skills" class="nav-link">~/skills</a>
+        <a href="#projects" class="nav-link">~/projects</a>
+        <a href="#contact" class="nav-link nav-contact">~/contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="status-line"><span class="status-dot"></span> BSIT student, currently learning by building</p>
+        <h1>Hi, I'm Junbert.<br>I build things<br>for the web.</h1>
+        <p class="hero-description">I'm a fourth-year Information Technology student who enjoys creating websites, exploring software development, and turning class ideas into useful projects.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">View projects</a>
+          <a class="button button-ghost" href="#contact">Contact me</a>
+        </div>
+      </div>
+
+      <div class="hero-art" role="img" aria-label="A terminal window showing Junbert's profile">
+        <div class="terminal">
+          <div class="terminal-bar">
+            <span class="window-dots"><i></i><i></i><i></i></span>
+            <span class="terminal-title">junbert@portfolio: ~</span>
+            <span class="terminal-shell">bash</span>
+          </div>
+          <div class="terminal-body">
+            <p><span class="prompt">$</span> cat profile.json</p>
+            <p class="t-out">{</p>
+            <p class="t-out indent"><span class="code-key">"name"</span>: <span class="code-str">"Junbert Advincula"</span>,</p>
+            <p class="t-out indent"><span class="code-key">"program"</span>: <span class="code-str">"BS Information Technology"</span>,</p>
+            <p class="t-out indent"><span class="code-key">"year"</span>: <span class="code-num">4</span>,</p>
+            <p class="t-out indent"><span class="code-key">"location"</span>: <span class="code-str">"Cebu, Philippines"</span>,</p>
+            <p class="t-out indent"><span class="code-key">"focus"</span>: [<span class="code-str">"web"</span>, <span class="code-str">"programming"</span>, <span class="code-str">"ui"</span>]</p>
+            <p class="t-out">}</p>
+            <p><span class="prompt">$</span> git status</p>
+            <p class="t-out">On branch <span class="code-key">main</span>: still learning, always improving</p>
+            <p><span class="prompt">$</span> <span class="code-cursor"></span></p>
+          </div>
+          <div class="terminal-status">
+            <span><b></b> online: open to learning</span>
+            <span>UTF-8</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section about-section" id="about">
+      <div class="container two-column">
+        <div class="section-heading">
+          <p class="path">~/about</p>
+          <h2>Still learning.<br>Always improving.</h2>
+          <figure class="profile-card">
+            <div class="card-bar"><span class="card-file">profile.jpg</span><span class="profile-status"><b></b>online</span></div>
+            <img src="images/junbert.webp" alt="Portrait of Junbert Advincula" width="695" height="650">
+            <figcaption><span class="prompt">$</span> whoami <span class="profile-name">Junbert Advincula</span></figcaption>
+          </figure>
+        </div>
+        <div class="about-content">
+          <p class="lead">Technology gives me a way to turn ideas into something people can actually use.</p>
+          <p>I'm currently studying for a Bachelor of Science in Information Technology. Through school activities and personal practice, I'm building my skills in web development, programming, and problem-solving.</p>
+          <p>I believe progress comes from trying, making mistakes, and improving each time. My goal is to keep learning and create projects that are simple, useful, and easy to use.</p>
+          <dl class="sysinfo">
+            <div><dt>program</dt><dd>BS Information Technology</dd></div>
+            <div><dt>year level</dt><dd>4th year</dd></div>
+            <div><dt>focus</dt><dd>Web development, programming, problem-solving</dd></div>
+            <div><dt>approach</dt><dd>Try, make mistakes, improve</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section education-section" id="education">
+      <div class="container two-column">
+        <div class="section-heading">
+          <p class="path">~/education</p>
+          <h2>Where I'm<br>studying.</h2>
+        </div>
+        <div class="edu-card">
+          <div class="card-bar"><span class="card-file">education.md</span><span class="skill-icon">edu</span></div>
+          <dl class="edu-list">
+            <div><dt>degree</dt><dd>Bachelor of Science in Information Technology</dd></div>
+            <div><dt>school</dt><dd>Cebu Eastern College Incorporated</dd></div>
+            <div><dt>status</dt><dd><span class="edu-status"><b></b>Currently enrolled</span></dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <section class="section skills-section container" id="skills">
+      <div class="section-heading">
+        <p class="path">~/skills</p>
+        <h2>Tools and skills I'm growing.</h2>
+        <p class="section-intro">A snapshot of the tools and areas I'm learning through coursework and hands-on practice.</p>
+      </div>
+      <div class="skills-grid">
+        <article class="skill-card"><div class="card-bar"><span class="skill-icon">&lt;/&gt;</span><span class="card-file">web_development</span></div><h3>Web Development</h3><p>Building structured pages and responsive layouts.</p><div class="skill-tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div></article>
+        <article class="skill-card"><div class="card-bar"><span class="skill-icon">{ }</span><span class="card-file">programming</span></div><h3>Programming</h3><p>Practicing programming logic and object-oriented concepts.</p><div class="skill-tags"><span>C#</span><span>Java</span><span>Logic</span></div></article>
+        <article class="skill-card"><div class="card-bar"><span class="skill-icon">[ ]</span><span class="card-file">ui_prototyping</span></div><h3>UI and prototyping</h3><p>Planning interfaces with clear layouts and useful navigation.</p><div class="skill-tags"><span>Figma</span><span>Wireframes</span><span>UI Design</span></div></article>
+        <article class="skill-card"><div class="card-bar"><span class="skill-icon">git</span><span class="card-file">tools_teamwork</span></div><h3>Tools and teamwork</h3><p>Learning to organize projects, solve issues, and collaborate.</p><div class="skill-tags"><span>GitHub</span><span>Godot</span><span>Teamwork</span></div></article>
+        <article class="skill-card skill-card-wide"><div class="card-bar"><span class="skill-icon">net</span><span class="card-file">basic_networking</span><span class="badge badge-practice">currently learning</span></div><h3>Basic Networking</h3><p>Learning how devices connect and communicate with each other in a network.</p><div class="skill-tags"><span>Networking</span><span>IP Addressing</span><span>OSI Model</span></div></article>
+      </div>
+      <p class="skills-note"><span>//</span> These are learning areas, and I'm continuing to improve through practice.</p>
+    </section>
+
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="projects-heading">
+          <div class="section-heading"><p class="path">~/projects</p><h2>Projects and practice.</h2></div>
+          <p class="projects-side-note">School work and practice projects that help me develop my skills.</p>
+        </div>
+        <div class="project-list">
+          <article class="project-card">
+            <div class="project-visual bakery-visual"><div class="bakery-window"><span class="bakery-small">FRESHLY BAKED</span><span class="bakery-title">The Flourishing<br>Bakery</span><span class="bakery-button">MADE WITH LOVE</span></div></div>
+            <div class="project-info">
+              <div class="project-topline"><span class="project-type">website</span><span class="badge badge-practice">practice</span></div>
+              <h3>The Flourishing Bakery</h3>
+              <p>A bakery website concept with a warm color palette, an About Us section, and responsive navigation.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>Responsive Design</span></div>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual inventory-visual"><img src="images/chowking-dashboard.webp" alt="Chowking Dashboard concept showing total products, near expiry, expired and out-of-stock counts, product status charts and a product list" loading="lazy"></div>
+            <div class="project-info">
+              <div class="project-topline"><span class="project-type">capstone</span><span class="badge badge-concept">concept</span></div>
+              <h3>Inventory Dashboard System</h3>
+              <p>A proposed web-based inventory dashboard to help monitor product expiration dates and provide clearer stock information.</p>
+              <div class="project-tags"><span>Web System</span><span>Inventory</span><span>Dashboard UI</span></div>
+              <a class="project-link" href="https://www.figma.com/design/mb9rPaIqZkepweIZof1ti9" target="_blank" rel="noopener noreferrer"><span class="prompt-inline">$</span> open figma_design <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual horror-visual"><img src="images/cec-anomaly.webp" alt="CEC Anomaly main menu showing the game title, about section, mechanics, settings and controls" loading="lazy"></div>
+            <div class="project-info">
+              <div class="project-topline"><span class="project-type">game project</span><span class="badge badge-wip">in progress</span></div>
+              <h3>CEC Anomaly</h3>
+              <p>A 3D horror game set inside Cebu Eastern College. Players complete tasks on each floor, free the spirits, hide from a demon, and stun it with a holy tranquilizer.</p>
+              <div class="project-tags"><span>Godot</span><span>3D Assets</span><span>GDScript</span></div>
+              <a class="project-link" href="https://canva.link/cefa5imlg2183wl" target="_blank" rel="noopener noreferrer"><span class="prompt-inline">$</span> open canva_design <span aria-hidden="true">&#8599;</span></a>
+              <p class="project-footnote"><span>//</span> In progress. Add a demo link when available.</p>
+            </div>
+          </article>
+          <article class="project-card">
+            <div class="project-visual food-visual"><img src="images/sugboanon-food-fantasy.webp" alt="Sugboanon's Food Fantasy website showing the logo, a menu button, and an article about why Cebu is a place for food lovers" loading="lazy"></div>
+            <div class="project-info">
+              <div class="project-topline"><span class="project-type">website</span><span class="badge badge-practice">practice</span></div>
+              <h3>Sugboanon's Food Fantasy</h3>
+              <p>A Cebu food website with a logo header, menu button, an article on why Cebu is a food lover's destination, and a photo gallery of local dishes and landmarks.</p>
+              <div class="project-tags"><span>HTML</span><span>CSS</span><span>Photo Gallery</span></div>
+              <a class="project-link" href="https://jucille.github.io/sugbuanon/" target="_blank" rel="noopener noreferrer"><span class="prompt-inline">$</span> open github <span aria-hidden="true">&#8599;</span></a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="container contact-wrap">
+        <div>
+          <p class="path">~/contact</p>
+          <h2>Have an idea?<br>Let's connect.</h2>
+          <p class="contact-copy">I'm open to learning, collaborating on student projects, and connecting with people who enjoy creating things with technology.</p>
+        </div>
+        <div class="contact-card">
+          <div class="card-bar"><span class="card-file">send_message.sh</span></div>
+          <div class="contact-body">
+            <h3>Let's talk about what we can build.</h3>
+            <a class="button button-primary email-button" href="mailto:junbertadvincula12@gmail.com"><span class="prompt-inline">$</span> junbertadvincula12@gmail.com</a>
+            <dl class="contact-meta">
+              <div><dt>type</dt><dd>Student portfolio</dd></div>
+              <div><dt>location</dt><dd>Cebu, Philippines</dd></div>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">&gt;_</span><span class="brand-text">junbert<span class="brand-host">@portfolio</span></span></a><p>Designed with curiosity and built one step at a time.</p><a href="#home" class="back-top">Back to top</a><span class="copyright">© <span id="year"></span> Junbert Advincula</span></div></footer>
+</body>
+</html>
